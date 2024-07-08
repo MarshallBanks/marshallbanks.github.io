@@ -3400,7 +3400,7 @@ input, select, textarea {
 }
 
 .tab-content ul li:hover {
-	background-color: none;
+	background-color: transparent;
 }
 
 
