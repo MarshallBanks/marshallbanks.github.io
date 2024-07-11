@@ -2971,6 +2971,30 @@ input, select, textarea {
 					}
 
 		}
+	/* Header colors for different sections */
+	.header-about-me {
+		color: #FF6384; /* Pink */
+	}
+
+	.header-where-ive-worked {
+		color: #00C9A7; /* Mint */
+	}
+
+	.header-projects {
+		color: #3498db; /* Blue */
+	}
+
+	.header-recommendations {
+		color: #FF6384; /* Pink */
+	}
+
+	.header-education {
+		color: #9b59b6; /* Purple */
+	}
+
+	.header-get-in-touch {
+		color: #3498db; /* Blue */
+	}
 
 /* Menu */
 
@@ -3401,6 +3425,11 @@ input, select, textarea {
 
 .tab-content ul li:hover {
 	background-color: transparent;
+}
+
+.tab-content a:hover {
+	border-bottom-color: transparent;
+	color: #7bd0c1 !important;
 }
 
 
