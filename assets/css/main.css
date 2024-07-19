@@ -152,7 +152,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #7bd0c1 !important;
+			color: #7FFFD4 !important;
 		}
 
 	strong, b {
@@ -3385,14 +3385,14 @@ input, select, textarea {
 .tabs ul li {
     padding: 10px;
     cursor: pointer;
-    background-color: #333;
+    background-color: #313f57;
     margin-bottom: 2px;
     color: #fff;
     transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .tabs ul li:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: #6C757D; /* lighter background on hover */
 }
 
 .tabs ul li.active {
@@ -3404,7 +3404,7 @@ input, select, textarea {
 	flex-grow: 1;
     width: calc(100% - 200px); /* Adjust width based on the sidebar width */
     padding: 20px;
-    background-color: #333;
+    background-color: #313f57;
     display: none;
     margin-left: auto; /* Align content to the right */
     flex-grow: 1; /* Allow content to grow to fill space */
@@ -3429,7 +3429,7 @@ input, select, textarea {
 
 .tab-content a:hover {
 	border-bottom-color: transparent;
-	color: #7bd0c1 !important;
+	color: #FF6F61 !important;
 }
 
 
