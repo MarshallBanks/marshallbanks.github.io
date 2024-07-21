@@ -3361,7 +3361,7 @@ input, select, textarea {
 .tabs ul li {
     padding: 10px;
     cursor: pointer;
-    background-color: #313f57;
+    background-color: #112240;
     margin-bottom: 2px;
     color: #ccd6f6;
     transition: background-color 0.3s; /* Smooth transition for hover effect */
@@ -3372,7 +3372,7 @@ input, select, textarea {
 }
 
 .tabs ul li.active {
-    background-color: #313f57; 
+    background-color: #112240; 
     color: #64ffda;
 }
 
@@ -3380,7 +3380,7 @@ input, select, textarea {
 	flex-grow: 1;
     width: calc(100% - 200px); /* Adjust width based on the sidebar width */
     padding: 20px;
-    background-color: #313f57;
+    background-color: #112240;
     display: none;
     margin-left: auto; /* Align content to the right */
     flex-grow: 1; /* Allow content to grow to fill space */
