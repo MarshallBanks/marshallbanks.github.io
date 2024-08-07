@@ -3399,6 +3399,22 @@ input, select, textarea {
 	color: #ccd6f6;
 }
 
+.tab-content ul li {
+    position:sticky; /* Position relative for the pseudo-element */
+    padding-left: 25px; /* Add padding for the custom bullet */
+	cursor: default;
+}
+
+.tab-content ul li::before {
+    content: '\25B7'; /* Unicode for a right-pointing hollow triangle */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust based on text alignment */
+    font-size: .5em; /* Adjust size as needed */
+    color: #64ffda; /* Change color as needed */
+}
+
 .tab-content ul li:hover {
 	background-color: transparent;
 }
