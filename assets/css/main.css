@@ -2579,7 +2579,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -3440,4 +3440,27 @@ input, select, textarea {
         width: 100%; /* Full width for mobile */
         margin-left: 0; /* Reset margin for mobile */
     }
+}
+
+.technologies-list {
+    list-style: none;
+    padding: 0;
+    columns: 4; /* Number of columns */
+	width: 75%;
+}
+
+.technologies-list li {
+    position: sticky; /* Maintain the style you already have */
+    padding-left: 25px;
+    cursor: default;
+}
+
+.technologies-list li::before {
+    content: '\25B7'; /* Use your existing bullet style */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .5em;
+    color: #64ffda;
 }
