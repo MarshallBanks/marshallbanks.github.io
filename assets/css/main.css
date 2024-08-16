@@ -3482,6 +3482,10 @@ input, select, textarea {
 	justify-content: space-between;
 }
 
+.project-footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
 .projects-grid li {
     background-color: #112240;
     border-radius: 8px;
@@ -3552,4 +3556,4 @@ input, select, textarea {
     height: 50px;
 	color: #64ffda;
 	stroke-width: 1;
-}
+ }
