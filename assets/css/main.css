@@ -147,7 +147,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #64ffda;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		border-bottom: dotted 1px #8892b0;
 	}
 
 		a:hover {
@@ -3337,7 +3337,7 @@ input, select, textarea {
 			}
 
 		}
-/* Tabs styling */
+/* Career Tabs */
 .tab-content.active {
     display: block;
 }
@@ -3376,6 +3376,7 @@ input, select, textarea {
     color: #64ffda;
 }
 
+/* Career Tab Content */
 .tab-content {
 	flex-grow: 1;
     width: calc(100% - 200px); /* Adjust width based on the sidebar width */
@@ -3442,25 +3443,113 @@ input, select, textarea {
     }
 }
 
+/* Technologies List */
 .technologies-list {
     list-style: none;
     padding: 0;
-    columns: 4; /* Number of columns */
+    columns: 4;
 	width: 75%;
 }
 
 .technologies-list li {
-    position: sticky; /* Maintain the style you already have */
+    position: sticky;
     padding-left: 25px;
     cursor: default;
 }
 
 .technologies-list li::before {
-    content: '\25B7'; /* Use your existing bullet style */
+    content: '\25B7';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     font-size: .5em;
     color: #64ffda;
+}
+
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-top {
+	display:flex;
+	justify-content: space-between;
+}
+
+.projects-grid li {
+    background-color: #112240;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects-grid a {
+	border-bottom: none;
+}
+
+.projects-grid li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: #ccd6f6;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.project-description {
+    margin: 15px 0;
+}
+
+.project-tech-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.project-tech-list li {
+    background-color: #313f57; /* Background for tech items */
+    color: #64ffda;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+}
+
+.project-tech-list li:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.projects-grid svg {
+    width: 28px;
+    height: 28px;
+	color: #ccd6f6;
+	stroke-width: 2;
+	fill: none; 
+	stroke: currentColor; 
+	stroke-linecap: round; 
+	stroke-linejoin: round;
+}
+
+.folder svg {
+    width: 50px;
+    height: 50px;
+	color: #64ffda;
+	stroke-width: 1;
 }
