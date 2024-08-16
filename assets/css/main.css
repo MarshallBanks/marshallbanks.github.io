@@ -3483,7 +3483,7 @@ input, select, textarea {
 }
 
 .project-footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
+    margin-top: auto;
 }
 
 .projects-grid li {
