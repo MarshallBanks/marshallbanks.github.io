@@ -3342,15 +3342,11 @@ input, select, textarea {
     display: block;
 }
 
-/* Specifically handle the first tab content when active */
-.tab-content:first-of-type.active {
-    border-top-left-radius: 0; /* No radius for the first tab content when active */
-}
-
 .tabs {
     display: flex;
     flex-wrap: wrap; /* Ensure tabs wrap correctly on smaller screens */
     margin-top: 2em; /* Add some space above the tabs */
+	
 }
 
 .tabs ul {
