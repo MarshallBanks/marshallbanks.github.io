@@ -3452,7 +3452,14 @@ input, select, textarea {
     .tab-content {
         width: 100%; /* Full width for mobile */
         margin-left: 0; /* Reset margin for mobile */
+		min-height: auto; /* Allow content to adjust naturally */
+        padding-bottom: 1rem; /* Ensure some padding at the bottom */
     }
+	.tab-content .date {
+        margin-top: 0;
+        margin-bottom: 1rem; /* Adjust spacing below the date */
+        font-size: 1rem; /* Optionally reduce font size for smaller screens */
+	}
 }
 
 /* Technologies List */
