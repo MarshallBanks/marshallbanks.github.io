@@ -3464,15 +3464,16 @@ input, select, textarea {
 
 /* Technologies List */
 .technologies-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* Create three equal columns */
     list-style: none;
     padding: 0;
-    columns: 4;
-	width: 75%;
+	padding-bottom: 1em;
 }
 
 .technologies-list li {
     position: sticky;
-    padding-left: 25px;
+    padding-left: 2em;
     cursor: default;
 }
 
