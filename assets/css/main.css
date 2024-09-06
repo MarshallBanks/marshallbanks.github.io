@@ -3577,3 +3577,21 @@ input, select, textarea {
 	color: #64ffda;
 	stroke-width: 1;
  }
+ 
+ /* Section/Article */
+ .section-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust this for font size */
+	padding-top: 4em;
+}
+
+.section-header::after {
+	content: "";
+    display: block;
+    position: relative;
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #223351;
+}
