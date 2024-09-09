@@ -3595,3 +3595,7 @@ input, select, textarea {
     margin-left: 20px;
     background-color: #223351;
 }
+
+.section-header-top {
+	padding-top: 1em;
+}
