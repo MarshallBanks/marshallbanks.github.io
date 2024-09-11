@@ -3599,3 +3599,11 @@ input, select, textarea {
 .section-header-top {
 	padding-top: 1em;
 }
+
+.recommendation p:first-of-type {
+    margin: 0 0 1em 0; /* Adjust the top margin to bring the name closer to the quote */
+}
+
+.recommendation p:last-of-type {
+    margin: 0 0 3em 0; /* Adjust the top margin to bring the name closer to the quote */
+}
