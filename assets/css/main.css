@@ -3343,6 +3343,11 @@ input, select, textarea {
 	min-height: 430px;
 }
 
+/* Initially make the first tab's content top-left corner square */
+.tab-content:first-of-type {
+    border-top-left-radius: 0px;
+}
+
 .tabs {
     display: flex;
     flex-wrap: wrap; /* Ensure tabs wrap correctly on smaller screens */
@@ -3637,6 +3642,7 @@ input, select, textarea {
     font-size: 1.2em; /* Optional: Adjust size for better proportion */
 }
 
+/* Keeping this if I decide to add squares around each section later
 /*.education-section {
     background-color: #112240; /* Slightly different background color */
     /*padding: 30px;
@@ -3648,9 +3654,7 @@ input, select, textarea {
 .education-section {
     background-color: inherit; /* Slightly different background color */
 	padding-bottom: 20px;
-    border-radius: 8px; /* Rounded corners */
     margin-bottom: 30px; /* Space between each subsection */
-    box-shadow: none; /* Adds a subtle shadow */
 }
 
 .education-section p {
