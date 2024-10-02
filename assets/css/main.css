@@ -3607,3 +3607,53 @@ input, select, textarea {
 .recommendation p:last-of-type {
     margin: 0 0 3em 0; /* Adjust the top margin to bring the name closer to the quote */
 }
+
+/* Education */
+.education ul {
+    list-style: none; /* Remove the default bullets */
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.education ul li {
+    position: relative; /* Position relative for the pseudo-element */
+    padding-left: 25px; /* Add padding for the custom bullet */
+	cursor: default;
+	background-color: inherit;
+}
+
+.education ul li::before {
+    content: '\25B7'; /* Unicode for a right-pointing hollow triangle */
+    position: absolute;
+    left: 0;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust based on text alignment */
+    font-size: .5em; /* Adjust size as needed */
+    color: #64ffda; /* Change color as needed */
+}
+
+.education-section h3 {
+    margin-bottom: 5px; /* Decrease spacing between h3 and text */
+    font-size: 1.2em; /* Optional: Adjust size for better proportion */
+}
+
+/*.education-section {
+    background-color: #112240; /* Slightly different background color */
+    /*padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    /*margin-bottom: 30px; /* Space between each subsection */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+/*}*/
+
+.education-section {
+    background-color: inherit; /* Slightly different background color */
+	padding-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px; /* Space between each subsection */
+    box-shadow: none; /* Adds a subtle shadow */
+}
+
+.education-section p {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
