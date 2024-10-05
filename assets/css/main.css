@@ -2,12 +2,6 @@
 @import url('brand.min.css');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2152,7 +2146,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: none;
 		border-radius: 0;
-		border-bottom: solid 1px #c9c9c9;
+		border-bottom: solid 1px #223351;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2177,7 +2171,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-bottom-color: #64ffda;
-			box-shadow: inset 0 -1px 0 0 #64ffda;
+			box-shadow: inset 0 -1px 0 0 #313f57;
 		}
 
 	select {
@@ -2231,7 +2225,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #585858;
+			color: #cdcdcd;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2535,7 +2529,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #585858;
+			background-color: #112240;
 			color: #ffffff !important;
 		}
 
@@ -2544,7 +2538,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #64ffda;
+				background-color: #223351;
 			}
 
 			input[type="submit"].primary:active,
@@ -2552,7 +2546,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #ee5f81;
+				background-color: #64ffda;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
