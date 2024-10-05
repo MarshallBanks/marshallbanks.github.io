@@ -2155,6 +2155,18 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	/* Form Input Placeholder Styles */
+	input::placeholder,
+	textarea::placeholder {
+		color: #7780a0; /* Adjust this color to match your theme */
+		opacity: 1; /* Full opacity */
+	}
+
+	::placeholder {
+		color: #7780a0; /* General placeholder color */
+		opacity: 1; /* Ensures full opacity */
+	}
+
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
@@ -2546,7 +2558,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #64ffda;
+				background-color: #445e85;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
