@@ -10,7 +10,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
     // Send the form data using fetch API
     fetch(formspreeURL, {
-        method: "POST",
+        method: "post",
         body: formData,
         headers: { 'Accept': 'application/json' }
     }).then(function(response) {
@@ -21,6 +21,9 @@ document.getElementById("contact-form").addEventListener("submit", function(even
             alert("Oops! There was a problem submitting your form.");
         }
     }).catch(function(error) {
+        alert("There was a problem submitting your form. Please try again.");
+        console.error("Error details:", error);
+        // Display your error message to the user
         alert("There was a problem submitting your form. Please try again.");
     });
 });
