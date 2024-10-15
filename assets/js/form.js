@@ -6,10 +6,11 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     
     // Create FormData object
     var formData = new FormData(form);
+    var formspreeURL = "https://formspree.io/f/manyydrp";
 
     // Send the form data using fetch API
-    fetch(form.action, {
-        method: form.method,
+    fetch(formspreeURL, {
+        method: "POST",
         body: formData,
         headers: { 'Accept': 'application/json' }
     }).then(function(response) {
