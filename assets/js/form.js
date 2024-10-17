@@ -61,7 +61,9 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     // Send the form data using fetch API
     fetch(formspreeURL, {
         method: "POST", 
-        mode: "no-cors",
+        headers: {
+        'Accept': 'application/json'
+        },
         body: formData
     }).then(function(response) {
         if (response.ok) {
