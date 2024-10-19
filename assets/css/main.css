@@ -3216,6 +3216,13 @@ input, select, textarea {
 				margin-left: 2.5em;
 			}
 
+			#footer .resume-button {
+				display: flexbox;
+				width: fit-content; /* Button size adapts to content */
+				margin-left: auto; /* Centers button horizontally */
+				margin-right: auto; /* Centers button horizontally */
+			}
+
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
@@ -3467,7 +3474,26 @@ input, select, textarea {
         margin-left: 0; /* Reset margin for mobile */
 		min-height: auto; /* Allow content to adjust naturally */
         padding-bottom: 1rem; /* Ensure some padding at the bottom */
+		border-radius: 8px;
     }
+
+	.tabs ul li{
+		-webkit-tap-highlight-color: transparent; /* Chrome, Safari, Android */
+		border-radius: 8px;
+		caret-color: transparent;
+	}
+
+	/* Ensure border-radius on hover */
+    .tabs ul li:hover {
+        border-radius: 8px;
+    }
+
+	/* Ensure border-radius for active (clicked) state */
+    .tabs ul li.active {
+		
+        border-radius: 8px;
+    }
+
 	.tab-content .date {
         margin-top: 0;
         margin-bottom: 1rem; /* Adjust spacing below the date */
@@ -3590,6 +3616,25 @@ input, select, textarea {
 	color: #64ffda;
 	stroke-width: 1;
  }
+
+ /* Mobile (below 736px) */
+@media screen and (max-width: 736px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack the cards vertically */
+    }
+
+    .projects-grid li {
+        width: 100%; /* Full width for each project card */
+        margin-bottom: 1rem; /* Add space between stacked cards */
+    }
+
+	.project-tech-list {
+		display: inline-flex;
+		flex-wrap: nowrap;
+		gap: 10px;
+		padding: 0;
+	}
+}
  
  /* Section/Article */
  .section-header {
