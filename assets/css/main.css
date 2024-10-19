@@ -3469,6 +3469,10 @@ input, select, textarea {
         max-width: none; /* Remove max-width for mobile */
     }
 
+	.tab-content:first-of-type {
+		border-top-left-radius: 8px;
+	}
+
     .tab-content {
         width: 100%; /* Full width for mobile */
         margin-left: 0; /* Reset margin for mobile */
