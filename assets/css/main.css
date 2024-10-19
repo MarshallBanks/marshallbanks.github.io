@@ -3526,6 +3526,19 @@ input, select, textarea {
     color: #64ffda;
 }
 
+/* Mobile (below 736px) */
+@media screen and (max-width: 736px) {
+    .technologies-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        gap: 10px;
+    }
+
+    .technologies-list li {
+		padding: 10px .5; 
+    }
+}
+
 
 /* Projects Grid */
 .projects-grid {
