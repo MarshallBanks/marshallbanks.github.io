@@ -3470,7 +3470,7 @@ input, select, textarea {
     }
 
 	.tab-content:first-of-type {
-		border-top-left-radius: 8px;
+		border-top-left-radius: 8px !important;
 	}
 
     .tab-content {
