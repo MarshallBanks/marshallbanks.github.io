@@ -2828,7 +2828,14 @@ input, select, textarea {
 
 		}
 
+		/* For smaller screens (below 480px) */
 		@media screen and (max-width: 480px) {
+			.tiles article p {
+				display: none; /* Hide the paragraph text */
+			}
+		}
+
+		/* @media screen and (max-width: 480px) {
 
 			.tiles {
 				margin: 0;
@@ -2839,7 +2846,7 @@ input, select, textarea {
 					margin: 1.25em 0 0 0;
 				}
 
-		}
+		} */
 
 /* Header */
 
@@ -3675,11 +3682,11 @@ input, select, textarea {
 	padding-top: 1em;
 }
 
-.recommendation p:first-of-type {
+.peer-review p:first-of-type {
     margin: 0 0 1em 0; /* Adjust the top margin to bring the name closer to the quote */
 }
 
-.recommendation p:last-of-type {
+.peer-review p:last-of-type {
     margin: 0 0 3em 0; /* Adjust the top margin to bring the name closer to the quote */
 }
 
