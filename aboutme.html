@@ -19,77 +19,93 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div style="
-        	background-color: #ffcc00; 
-        	color: #000; 
-        	text-align: center; 
-        	padding: 10px 0; 
-        	position: fixed; 
-        	top: 0; 
-        	width: 100%; 
-        	z-index: 1000;">
-        	<p style="margin: 0; font-weight: bold;">This site is a work in progress.</p>
-    	</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/MegaMan-Brittany.png" alt="" /></span><span class="title">Marshall Banks</Menu>
-										
-									</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
+				<header id="header">
+					<!-- Logo -->
+					<a href="index.html" class="logo">
+						<span class="symbol">
+							<img src="images/MegaMan-Brittany.png" alt="" />
+						</span>
+						<span class="title">Marshall Banks</span>
+					</a>
+		
+					<!-- Desktop Nav -->
+					<nav id="desktop-nav">
+						<div class="nav-container">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="aboutme.html#career">Career</a></li>
+								<li><a href="aboutme.html">Projects</a></li>
+								<li><a href="aboutme.html">Peer Reviews</a></li>
+								<li><a href="aboutme.html">Education</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+							<a href="https://marshallbanks.github.io/assets/documents/resume.pdf" target="_blank" class="button resume-button">Resume</a>	
 						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
+					</nav>
+		
+					<!-- Hamburger Icon for Mobile -->
+					<nav style="display: none;">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
-							<li><a href="aboutme.html#career">Career</a></li>
-							<li><a href="aboutme.html#projects">Projects</a></li>
-							<li><a href="aboutme.html#peer reviews">Peer Reviews</a></li>
-							<li><a href="aboutme.html#education">Education</a></li>
-							<li><a href="contact.html">Get In Touch</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="#menu">Menu</a></li>
 						</ul>
 					</nav>
+				</header>
+				
+				<!-- Side Menu Overlay for Mobile -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="aboutme.html#career">Career</a></li>
+						<li><a href="aboutme.html#projects">Projects</a></li>
+						<li><a href="aboutme.html#peer reviews">Peer Reviews</a></li>
+						<li><a href="aboutme.html#education">Education</a></li>
+						<li><a href="contact.html">Get In Touch</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
 
 				<!-- Main -->
 				<div id="main">
+					<!-- Hero Landing -->
+					<div class="inner">
+						<section id="hero">
+							<p>Hi! My name is,</p>
+							<h1>Marshall Banks.</h1>
+							<h1>Take your shoes off, stay awhile.</h1>
+							<p>I'm a software developer—and it feels great to finally say that! Over the past 8 years in the tech industry, I've grown from support roles to full-fledged development, honing my ability to solve complex problems with clean, efficient code. This portfolio highlights my journey and some of the exciting projects I've worked on. Let's create something amazing together. Ready to dive in? Keep scrolling or click the button below to keep the party going.</p>
+							<div id="dicover-button-container">
+								<a href="#" class="button hero-button">Meet Marshall</a>
+							</div>
+						</section>
+					</div>
+					
 					<!-- About Me -->
 					<div class="inner">
-						<!--<span class="image main"><img src="images/about-me/OLYMPIC NATIONAL PARK BANNER CROPPED.jpg" alt="" /></span>-->
-						<h2 class="section-header section-header-top">About Me</h2>
-						<p><span class="image left"><img src="images/about-me/resized_square_image_painted.png" alt="" /></span>Hi there! I'm Marshall Banks, a software developer with a passion for creating meaningful tech solutions. My journey into the tech world was a bit unconventional—I initially took on a data entry role to support my community theater hobby and ended up diving headfirst into the I.T. department with zero technical experience. Through this experience, I discovered my love for helping people, solving problems, and using code to make a difference.</p>
-						<p><span class="image right"><img src="images/about-me/hiking.png" alt="" /></span>When I'm not immersed in code, you can find me enjoying disc golf, playing video games, strumming my guitar, or relaxing with my wife as we binge-watch "The Office" (again). I also love exploring the beautiful Pacific Northwest—hiking in places like the Olympic National Forest is one of my favorite pastimes.</p>
-						<p>Currently, I'm exploring new areas of programming, from AI to app development, always with a focus on how technology can enhance our lives. And yes, I'm a big MegaMan fan—you might have spotted his helmet as my icon! Feel free to <a href="#get-in-touch" style="text-decoration: underline;">connect with me through the links below!</a></p>
-						
-						<h4>Here are a few technologies I’ve been working with recently:</h4>
-						<ul class="technologies-list">
-							<li>C#</li>
-							<li>JS/HTML/CSS</li>
-							<li>ASP.NET Core 8</li>
-							<li>.NET 8</li>
-							<li>Blazor</li>
-							<li>Python</li>
-							<li>SQL</li>
-							<li>React</li>
-						</ul>
+						<section id="about me">
+							<!--<span class="image main"><img src="images/about-me/OLYMPIC NATIONAL PARK BANNER CROPPED.jpg" alt="" /></span>-->
+							<h2 class="section-header section-header-top">About Me</h2>
+							<p><span class="image left"><img src="images/about-me/resized_square_image_painted.png" alt="" /></span>Hi there! I'm Marshall Banks, a software developer with a passion for creating meaningful tech solutions. My journey into the tech world was a bit unconventional—I initially took on a data entry role to support my community theater hobby and ended up diving headfirst into the I.T. department with zero technical experience. Through this experience, I discovered my love for helping people, solving problems, and using code to make a difference.</p>
+							<p><span class="image right"><img src="images/about-me/hiking.png" alt="" /></span>When I'm not immersed in code, you can find me enjoying disc golf, playing video games, strumming my guitar, or relaxing with my wife as we binge-watch "The Office" (again). I also love exploring the beautiful Pacific Northwest—hiking in places like the Olympic National Forest is one of my favorite pastimes.</p>
+							<p>Currently, I'm exploring new areas of programming, from AI to app development, always with a focus on how technology can enhance our lives. And yes, I'm a big MegaMan fan—you might have spotted his helmet as my icon! Feel free to <a href="#get-in-touch" style="text-decoration: underline;">connect with me through the links below!</a></p>
+							
+							<h4>Here are a few technologies I’ve been working with recently:</h4>
+							<ul class="technologies-list">
+								<li>C#</li>
+								<li>JS/HTML/CSS</li>
+								<li>ASP.NET Core 8</li>
+								<li>.NET 8</li>
+								<li>Blazor</li>
+								<li>Python</li>
+								<li>SQL</li>
+								<li>React</li>
+							</ul>
+						</section>
 					</div>
 					
 
@@ -360,7 +376,6 @@
 								<li><a href="https://leetcode.com/MarshallBanks/" target="_blank" class="icon solid style2 cib-leetcode" style="vertical-align: -0.15em;"><span class="label">LeetCode</span></a></li>
 								<li><a href="contact.html" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<a href="https://marshallbanks.github.io/assets/documents/resume.pdf" target="_blank" class="button resume-button">See My Resume</a>
 						</section>
 					
 						<ul class="copyright">
@@ -380,6 +395,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/tabs.js"></script>
+			<script src="assets/js/headerScroll.js"></script>
 
 	</body>
 </html>

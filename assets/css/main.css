@@ -2851,22 +2851,35 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		transition: transform .35s ease-in-out;
+		z-index: 1000;
+		left: 0;
+		right: 0;
+		position: fixed;
+		display: flex;
+		align-items: center;
+		justify-content: space-between; 
+		padding: 20px;
+		padding: 10px 20px; /* Reduce this value for a tighter fit */
+		background-color: rgba(10, 25, 47, 0.9); /* Adjust opacity (0.9) as needed */
 	}
 
+	#header.hide-header {
+		transform: translateY(-100%); /* Moves the header out of view */
+	}
 		#header .logo {
 			display: block;
 			border-bottom: 0;
 			color: #ccd6f6;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin-top: 1em;
+			margin-left: 1em;
 			text-decoration: none;
 			text-transform: uppercase;
-			display: inline-block;
 		}
 			#header .title {  /* <-- Add your new rule here */
-				font-size: 2.4em; /* Adjust as needed */
+				font-size: 1.3em; /* Adjust as needed */
 			}
 
 			#header .logo > * {
@@ -2880,8 +2893,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 5.3em;
-					height: 6em;
+					width: 3.2em;
+					height: 3.6em;
 				}
 
 		#header nav {
@@ -2925,6 +2938,21 @@ input, select, textarea {
 						text-transform: uppercase;
 					}
 
+					/* Adjust the font and size for desktop nav menu */
+					#header #desktop-nav ul li a {
+						font-size: 0.9em; /* Adjust size as needed */
+						color: #ccd6f6; /* Adjust color if needed */
+						font-weight: 200;
+						letter-spacing: 0em; /* Reduce letter spacing for a cleaner look */
+						text-transform: none; /* Remove uppercase if desired */
+						padding: 0 1em; /* Adjust padding to reduce spacing */
+						background-color: transparent;
+					}
+
+					#desktop-nav .nav-container {
+						display: flex;
+					}
+
 					#header nav ul li a[href="#menu"] {
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
@@ -2950,6 +2978,19 @@ input, select, textarea {
 							background-position: center;
 							background-repeat: no-repeat;
 							background-size: 2em 2em;
+						}
+
+						#header .resume-button {
+							background-color: #223351; /* Custom background color */
+							display: flex;
+							margin-left: 1em;
+							padding: 0 0.9em 0 1.15em;
+							font-size: .75em;
+						}
+
+						#header .resume-button:hover {
+							background-color: #445e85; /* Darker shade for hover */
+							color: #64ffda; /* Accent color */
 						}
 
 						#header nav ul li a[href="#menu"]:before {
@@ -3221,13 +3262,6 @@ input, select, textarea {
 			#footer > .inner section:nth-child(2) {
 				width: calc(33% - 2.5em);
 				margin-left: 2.5em;
-			}
-
-			#footer .resume-button {
-				display: flexbox;
-				width: fit-content; /* Button size adapts to content */
-				margin-left: auto; /* Centers button horizontally */
-				margin-right: auto; /* Centers button horizontally */
 			}
 
 			#footer > .inner .copyright {
@@ -3809,5 +3843,55 @@ input, select, textarea {
 	right: 20px;
 }
 
+/* Hero Section */
+#hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Center vertically */
+	align-items: flex-start; /* Align text to the left */
+	height: 80vh; /* Dynamic height based on viewport */
+	padding-left: 5vw; /* Padding from the left for spacing */
+	padding-bottom: 30vw;
+	padding-top: 25vw
+  }
+  
+  #hero p:first-of-type {
+	font-size: clamp(16px, 2.5vw, 24px); /* Min: 20px, Responsive: 5vw, Max: 28px */
+	color: #64ffda; /* Greenish accent color for the first intro line */
+	margin-bottom: 10px;
+	font-weight: lighter;
+  }
+  
+  #hero h1 {
+	font-size: clamp(36px, 7vw, 72px);
+	font-weight: bold;
+	color: #ccd6f6; /* White text for your name */
+	line-height: 1.2;
+	margin: 0;
+  }
+  
+  #hero h1 + h1 {
+	font-size: clamp(36px, 7vw, 72px);
+	color: #8892b0; /* Lighter blue for the second line */
+	margin-top: 5px;
+  }
+  
+  #hero p:last-of-type {
+	font-size: 1.3rem;
+	color: #8892b0;
+	margin-top: 20px;
+	max-width: 700px; /* Keep the paragraph from getting too wide */
+	line-height: 1.5;
+  }
 
+  	/* Hero button subclass */
+	.hero-button {
+		display: flex;
+		background-color: #223351; /* Custom background color */
+	}
+
+	.hero-button:hover {
+		background-color: #445e85; /* Darker shade for hover */
+		color: #64ffda; /* Accent color */
+	}
 
