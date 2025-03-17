@@ -2859,8 +2859,7 @@ input, select, textarea {
 		position: fixed;
 		display: flex;
 		align-items: center;
-		justify-content: space-between; 
-		padding: 20px;
+		justify-content: space-between;
 		padding: 10px 20px; /* Reduce this value for a tighter fit */
 		background-color: rgba(10, 25, 47, 0.9); /* Adjust opacity (0.9) as needed */
 	}
@@ -2897,13 +2896,6 @@ input, select, textarea {
 					width: 3.2em;
 					height: 3.6em;
 				}
-
-		#header nav {
-			position: fixed;
-			right: 2em;
-			top: 2em;
-			z-index: 10000;
-		}
 
 			#header nav ul {
 				display: -moz-flex;
@@ -2954,7 +2946,17 @@ input, select, textarea {
 						display: flex;
 					}
 
+					/* The mobile nav gets absolutely positioned if you want it top-right */
+					#mobile-nav {
+						position: absolute;
+						right: 2em;
+						top: 2em;
+						z-index: 10000;
+						display: block; /* Hidden on large screens */
+					}
+
 					#header nav ul li a[href="#menu"] {
+						display: none;
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
 						text-indent: 4em;
@@ -3012,11 +3014,24 @@ input, select, textarea {
 							opacity: 0;
 						}
 
-		@media screen and (max-width: 736px) {
+		/* Mobile: Show hamburger menu, hide desktop nav */
+		@media (max-width: 736px) {
+    		#desktop-nav {
+        		display: none; /* Hide desktop nav */
+    		}
+    		#header nav ul li a[href="#menu"] {
+        		display: block; /* Show hamburger menu */
+    		}
+		}
 
-			#header {
-				padding: 4em 0 0.1em 0 ;
+		/* Hide the header title "Marshall Banks" on mobile screens */
+		@media (max-width: 1000px) {
+			#header .logo .title {
+				display: none; /* Hide the title */
 			}
+		}
+
+		@media screen and (max-width: 736px) {
 
 				#header nav {
 					right: 0.5em;
@@ -3846,15 +3861,15 @@ input, select, textarea {
 
 /* Hero Section */
 #hero {
-	display: flex;
-	flex-direction: column;
-	justify-content: center; /* Center vertically */
-	align-items: flex-start; /* Align text to the left */
-	height: 80vh; /* Dynamic height based on viewport */
-	padding-left: 5vw; /* Padding from the left for spacing */
-	padding-bottom: 30vw;
-	padding-top: 25vw
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align content to the left */
+    min-height: calc(100vh - 80px); /* Full viewport height minus header */
+    padding-left: 5vw; /* Padding from the left for spacing */
+    padding-right: 5vw; /* Add some padding on the right */
+    box-sizing: border-box; /* Ensure padding doesn't break layout */
+}
   
   #hero p:first-of-type {
 	font-size: clamp(16px, 2.5vw, 24px); /* Min: 20px, Responsive: 5vw, Max: 28px */
@@ -3894,5 +3909,15 @@ input, select, textarea {
 	.hero-button:hover {
 		background-color: #445e85; /* Darker shade for hover */
 		color: #64ffda; /* Accent color */
+	}
+
+	/* For smaller screens */
+	@media screen and (max-width: 768px) {
+		#hero {
+			min-height: calc(100vh - 60px); /* Account for smaller header */
+		}
+		#about-me {
+			margin-top: 15vh; /* Push it further down for smaller screens */
+		}
 	}
 
