@@ -2944,6 +2944,7 @@ input, select, textarea {
 
 					#desktop-nav .nav-container {
 						display: flex;
+						margin-right: 1em;
 					}
 
 					#header nav ul li a[href="#menu"] {
