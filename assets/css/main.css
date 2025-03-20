@@ -2946,15 +2946,6 @@ input, select, textarea {
 						display: flex;
 					}
 
-					/* The mobile nav gets absolutely positioned if you want it top-right */
-					#mobile-nav {
-						position: absolute;
-						right: 2em;
-						top: 2em;
-						z-index: 10000;
-						display: block; /* Hidden on large screens */
-					}
-
 					#header nav ul li a[href="#menu"] {
 						display: none;
 						-webkit-tap-highlight-color: transparent;
