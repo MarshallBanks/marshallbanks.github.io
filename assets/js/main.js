@@ -182,4 +182,9 @@
 
 			});
 
+	// Update the copyright year dynamically
+	$(function(){
+		$('#current-year').text(new Date().getFullYear());
+	});
+	
 })(jQuery);

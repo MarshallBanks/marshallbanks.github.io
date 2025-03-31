@@ -361,6 +361,30 @@
 								</ul>
 							</div>
 						</section>
+
+						<section id="contact" class="contact">
+							<h2 class="section-header">Contact</h2>
+							<p>If you have any questions or just want to get in touch, feel free to contact me using the form below or through any of my social media profiles.</p>
+							<form method="POST" action="https://formspree.io/f/manyydrp" id="contact-form">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field half">
+										<input type="text" name="subject" id="subject" placeholder="Subject">
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send" class="primary" /></li>
+								</ul>
+							</form>
+						</section>
 					</div>
 				</div>
 					
@@ -380,7 +404,7 @@
 						</section>
 					
 						<ul class="copyright">
-							<li>&copy; 2024 Marshall Banks. All rights reserved</li>
+							<li>&copy; <span id="current-year"></span> Marshall Banks. All rights reserved</li>
 							  <li>Based on a design by <a href="http://html5up.net" target="_blank">HTML5 UP</a> (Licensed under <a href="https://html5up.net/license">CCA 3.0)</a></li>
 							<li>Icon inspired by MegaMan. Image used under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> license.</li>
 						</ul>
@@ -397,6 +421,16 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/tabs.js"></script>
 			<script src="assets/js/headerScroll.js"></script>
+			<script src="assets/js/form.js"></script>
 
+		<!-- Modal Structure -->
+		<div id="success-modal" class="modal">
+			<div class="modal-content">
+				<h2>Thank You!</h2>
+				<span class="close-button">&times;</span>
+				<p>Your message has been successfully sent. I'll get back to you soon!</p>
+				<a href="aboutme.html" class="button">Back to About Me</a>
+			</div>
+		</div>
 	</body>
 </html>
