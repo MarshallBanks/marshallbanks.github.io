@@ -3936,3 +3936,13 @@ input, select, textarea {
 		}
 	}
 
+/* Top of the Page Anchor */
+#home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	pointer-events: none;
+	}
