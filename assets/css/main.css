@@ -3262,7 +3262,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 0 0 6em 0 ;
 		background-color: #0a192f;
 	}
 
@@ -3325,7 +3325,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 5em 0 3em 0 ;
+				padding: 0 0 3em 0 ;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -3357,7 +3357,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 0 1em 0 ;
+				padding: 0 0 1em 0 ;
 			}
 
 				#footer > .inner {
