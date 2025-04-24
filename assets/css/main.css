@@ -3916,14 +3916,42 @@ input, select, textarea {
   }
 
   	/* Hero button subclass */
-	.hero-button {
+  	#hero-button-container {
 		display: flex;
-		background-color: #223351; /* Custom background color */
+		gap: 1rem;
 	}
 
-	.hero-button:hover {
-		background-color: #445e85; /* Darker shade for hover */
-		color: #64ffda; /* Accent color */
+	.hero-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 6px;
+		font-weight: 600;	
+		letter-spacing: 2.5px;
+	}
+
+	/* PRIMARY (Meet Marshall) */
+	.hero-button.primary {
+		background-color: #64ffda;
+		color: #0f1117 !important; /* dark navy text for contrast */
+		border: 2px solid #64ffda;
+	}
+
+	.hero-button.primary:hover {
+		background-color: #223351;
+		color: #ffffff;
+		color:#64ffda !important;
+	}
+
+	/* SECONDARY (See My Work) */
+	.hero-button.secondary {
+		background-color: transparent;
+		color: #64ffda;
+	}
+	
+	.hero-button.secondary:hover {
+		background-color: #223351;
+		color: #ffffff;
 	}
 
 	/* For smaller screens */
