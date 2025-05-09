@@ -2873,9 +2873,7 @@ input, select, textarea {
 			border-bottom: 0;
 			color: #ccd6f6;
 			font-weight: 900;
-			letter-spacing: 0.35em;
-			margin-top: 1em;
-			margin-left: 1em;
+			letter-spacing: 0.35em; 
 			text-decoration: none;
 			text-transform: uppercase;
 		}
@@ -2889,13 +2887,13 @@ input, select, textarea {
 			}
 
 			#header .logo .symbol {
-				margin-right: 0.65em;
+				
 			}
 
 				#header .logo .symbol img {
 					display: block;
-					width: 3.2em;
-					height: 3.6em;
+					width: 4.5em;
+					height: 4.5em;
 				}
 
 			#header nav ul {
