@@ -3453,7 +3453,7 @@ input, select, textarea {
     background-color: #313f57; /* Background for tech items */
     color: #64ffda;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 0.875rem;
 }
 
