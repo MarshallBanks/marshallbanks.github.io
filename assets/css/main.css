@@ -2584,6 +2584,7 @@ input, select, textarea {
 			color: #0a192f !important;
 			border-radius: 50px;
 			height: 3.5em;
+			transition: all 0.3s ease;
 		}
 
 			input[type="submit"].primary:hover,
@@ -3027,6 +3028,7 @@ input, select, textarea {
 							padding: 0em 1.2em;
 							font-size: 0.75em;
 							box-shadow: none;
+							transition: all 0.3s ease;
 						}
 
 						#header .resume-button:hover {
