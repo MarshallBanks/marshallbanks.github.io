@@ -2327,16 +2327,52 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 4px;
+		border-radius: 5px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
+		/* 1) Base image is fully gray */
 		.image img {
-			border-radius: 4px;
+			border-radius: inherit;
 			display: block;
+			width: 100%;
+			filter: grayscale(100%);
+			transition: filter 0.5s ease;
 		}
+
+		/* 2) Mint tint pseudo-element on top */
+		.image::after {
+			content: "";
+			position: absolute;
+			inset: 0;                    /* cover the whole .image area */
+			background: #64ffda;         /* your mint hex */
+			mix-blend-mode: multiply;    /* tint blending */
+			opacity: .8;                /* tweak strength */
+			transition: opacity 0.5s ease;
+		}
+
+		/* 3) Hover state: bring back full‑color & hide the tint */
+		.image:hover img {
+			filter: none;                /* removes grayscale */
+		}
+
+		.image:hover::after {
+			opacity: 0;                  /* hides the mint layer */
+		}
+
+		/* 4) If you need your left/right padding adjustments */
+		.image.left::after {
+			right: 1.5em;   /* match your .image.left padding */
+			bottom: 1em;
+		}
+
+		.image.right::after {
+			left: 1.5em;    /* match your .image.right padding */
+			bottom: 1em;
+		}
+
 
 		.image.left, .image.right {
 			max-width: 40%;
