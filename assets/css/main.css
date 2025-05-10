@@ -111,7 +111,7 @@ input, select, textarea {
 
 /* Type */
 
-	body, input, select, textarea {
+	body, input, select, textarea, button {
 		color: #8892b0;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
@@ -2580,8 +2580,10 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #112240;
-			color: #ffffff !important;
+			background-color: #64ffda;
+			color: #0a192f !important;
+			border-radius: 50px;
+			height: 3.5em;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2590,6 +2592,7 @@ input, select, textarea {
 			button.primary:hover,
 			.button.primary:hover {
 				background-color: #223351;
+				color: #64ffda !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -3024,12 +3027,11 @@ input, select, textarea {
 							padding: 0em 1.2em;
 							font-size: 0.75em;
 							box-shadow: none;
-							transition: all 0.3s ease;
 						}
 
 						#header .resume-button:hover {
-							transform: translateY(-2px);
-							background-color: #64ffda;
+							color:#64ffda !important;
+							background-color: #223351;
 						}
 
 						#header nav ul li a[href="#menu"]:before {
@@ -3982,8 +3984,8 @@ input, select, textarea {
 	}
 
 	.hero-button.primary:hover {
-		transform: translateY(-2px);
-		background-color: #64ffda;
+		background-color: #112240;
+		color: #64ffda !important;
 	}
 
 	/* SECONDARY (See My Work) */
@@ -3996,7 +3998,10 @@ input, select, textarea {
 	}
 	
 	.hero-button.secondary:hover {
-		transform: translateY(-2px);
+		background-color: #112240;
+		color: #64ffda !important;
+		box-shadow: 0 0 0 1px transparent; 
+		border-color: transparent;
 	}
 
 	/* For smaller screens */
