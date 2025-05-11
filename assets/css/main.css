@@ -3455,6 +3455,7 @@ input, select, textarea {
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 0.875rem;
+	white-space: nowrap;  /* ← added */
 }
 
 .project-tech-list li:hover {
