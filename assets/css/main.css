@@ -2653,10 +2653,6 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
-			#header .logo .symbol {
-				
-			}
-
 				#header .logo .symbol img {
 					display: block;
 					width: 4.5em;
@@ -2788,7 +2784,12 @@ input, select, textarea {
     		}
     		#header nav ul li a[href="#menu"] {
         		display: block; /* Show hamburger menu */
+				font-size: 1.7rem;
     		}
+			#header {
+				padding-left: .5em;
+				padding-right: .01em;
+			}
 		}
 
 		/* Hide the header title "Marshall Banks" on mobile screens */
@@ -2998,40 +2999,10 @@ input, select, textarea {
 		}
 
 /* Main */
-/* Base: Large screens (desktop) */
 #main {
-	margin-top: 2.5em;
-	padding: 0 0 6em 0;
-}
-  
-/* Mid-range screens (tablet sizes) */
-@media screen and (max-width: 1400px) {
-	#main {
-	  margin-top: 5em;
-	}
+	margin-top: 1em;
 }
 
-/* Additional breakpoint: Up to 800px */
-@media screen and (max-width: 1300px) {
-	#main {
-		margin-top: 7em;
-	}
-}
-
-/* Additional breakpoint: Up to 800px */
-@media screen and (max-width: 1100px) {
-	#main {
-		margin-top: 5.2em;
-	}
-}
-  
-/* Small screens (mobile) */
-@media screen and (max-width: 736px) {
-	#main {
-	  margin-top: calc(5.5em + env(safe-area-inset-top));
-	  padding: 0 0 4em 0;
-	}
-}
 
 /* Footer */
 
@@ -3655,9 +3626,11 @@ input, select, textarea {
     justify-content: center; /* Center vertically */
     align-items: flex-start; /* Align content to the left */
     min-height: calc(100vh - 80px); /* Full viewport height minus header */
-    padding-left: 5vw; /* Padding from the left for spacing */
+    padding-left: 7vw; /* Padding from the left for spacing */
     padding-right: 5vw; /* Add some padding on the right */
+	padding-top: 80px;
     box-sizing: border-box; /* Ensure padding doesn't break layout */
+	margin-bottom: 6em;
 }
   
   #hero p:first-of-type {
@@ -3733,15 +3706,41 @@ input, select, textarea {
 		border-color: transparent;
 	}
 
-	/* For smaller screens */
 	@media screen and (max-width: 768px) {
-		#hero {
-			min-height: calc(100vh - 60px); /* Account for smaller header */
-		}
-		#about-me {
-			margin-top: 15vh; /* Push it further down for smaller screens */
-		}
-	}
+  #hero {
+	padding-left: 0;
+	padding-right: 0;
+  }
+  /* shrink the intro label */
+  #hero p:first-of-type {
+    font-size: clamp(12px, 3vw, 16px);
+  }
+
+  #hero h1 {
+    /* on a narrow viewport this will be ~40px, but won’t go below 36 or above 56 */
+    font-size: clamp(36px, 10vw, 56px);
+    line-height: 1.15;
+  }
+
+  /* Secondary headline (“Take your shoes off…”) */
+  #hero h1 + h1 {
+    /* around ~32px on mobile, floor 32, ceiling 48 */
+    font-size: clamp(32px, 8vw, 48px);
+    margin-top: 0.25em;
+  }
+
+  /* body paragraph */
+  #hero p:last-of-type {
+    font-size: 1rem;      /* about 16px */
+    max-width: 100%;      /* fill more of the screen */
+  }
+
+  /* (optional) button text */
+  .hero-button {
+    font-size: 0.85rem;
+  }
+}
+
 
 /* Top of the Page Anchor */
 #home {
