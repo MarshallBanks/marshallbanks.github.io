@@ -3261,22 +3261,29 @@ input, select, textarea {
 	}
 }
 
-/* Technologies List */
-.technologies-list {
+/* Tech Stack List */
+.tech-stack {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr); 
-    list-style: none;
-    padding: 0;
-	margin-top: 25px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 2em;
 }
 
-.technologies-list li {
-    position: sticky;
+.stack-column {
+	list-style: none;
+	padding-left: 0%;
+}
+
+.stack-column h6 {
+	margin-bottom: .5em;
+}
+
+.stack-column li {
+    position: relative;
     padding-left: 2em;
     cursor: default;
 }
 
-.technologies-list li::before {
+.stack-column li::before {
     content: '\25B7';
     position: absolute;
     left: 0;
