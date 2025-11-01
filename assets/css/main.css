@@ -2783,6 +2783,29 @@ input, select, textarea {
 		visibility: hidden;
 		z-index: 10002;
 	}
+		.menu-resume {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 1rem;
+		padding: 0.85rem 1rem;
+		background-color: #64ffda;
+		color: #0a192f !important;
+		letter-spacing: 2.5px;
+		border-radius: 0.4rem;     
+		line-height: 1;     /* <-- keeps text from drifting */
+  		min-height: 2rem;      /* <-- instead of fixed height */
+		font-weight: 600;
+		text-align: center;
+		transition: all 0.3s ease;
+		width: 80%;
+		}
+
+		.menu-resume:hover {
+		background-color: #223351;
+		outline: none;
+		}
+
 
 		#menu > .inner {
 			-moz-transition: opacity 0.45s ease;
