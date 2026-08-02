@@ -2328,37 +2328,18 @@ input, select, textarea {
 
 	.image {
 		border-radius: 5px;
-		border: 0;
-		position: relative;
 	}
 
-		/* 1) Base image is fully gray */
-		.image img {
-			border-radius: inherit;
-			display: block;
-			width: 100%;
-			filter: grayscale(100%);
-			transition: filter 0.5s ease;
-		}
+	.image img {
+		border-radius: inherit;
+		display: block;
+		width: 100%;
+		transition: transform 0.3s ease;
+	}
 
-		/* 2) Mint tint pseudo-element on top */
-		.image::after {
-			content: "";
-			position: absolute;
-			inset: 0;                    /* cover the whole .image area */
-			background: #64ffda;         /* your mint hex */
-			mix-blend-mode: multiply;    /* tint blending */
-			transition: opacity 0.5s ease;
-		}
-
-		/* 3) Hover state: bring back full‑color & hide the tint */
-		.image:hover img {
-			filter: none;                /* removes grayscale */
-		}
-
-		.image:hover::after {
-			opacity: 0;                  /* hides the mint layer */
-		}
+	.image:hover img {
+		transform: scale(1.02);
+	}
 
 /* Table */
 
