@@ -3693,19 +3693,27 @@ input, select, textarea {
 
 /* Tech Stack List */
 .tech-stack {
+	grid-column: 1 / -1;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	margin-top: 2em;
-	gap: 0;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 5rem;
+	margin-top: -2.5em;
+	max-width: 540px;
 }
 
 .stack-column {
 	list-style: none;
-	padding-left: 0%;
+	padding-left: 0;
+	margin-bottom: 0;
+	display: grid;
+	grid-template-columns: repeat(2, max-content);
+	column-gap: 2.5rem;
+	row-gap: 0.25rem;
 }
 
 .stack-column h6 {
-	margin-bottom: .5em;
+	grid-column: 1 / -1;
+	margin-bottom: 0.5em;
 }
 
 .stack-column li {
@@ -3724,10 +3732,6 @@ input, select, textarea {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
 		padding-left: .5em;
-    }
-
-    .technologies-list li {
-		padding: 10px .5; 
     }
 }
 
