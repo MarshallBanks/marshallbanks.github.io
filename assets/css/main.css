@@ -112,7 +112,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea, button {
-		color: #8892b0;
+		color: #9aa8c7;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -142,7 +142,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #64ffda;
-		border-bottom: dotted 1px #8892b0;
+		border-bottom: dotted 1px #9aa8c7;
 	}
 
 		a:hover {
@@ -2989,7 +2989,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: #8892b0;
+				color: #9aa8c7;
 			}
 
 				#footer > .inner .copyright a {
@@ -3555,13 +3555,13 @@ input, select, textarea {
   
   #hero h1 + h1 {
 	font-size: clamp(36px, 7vw, 72px);
-	color: #8892b0; /* Lighter blue for the second line */
+	color: #9aa8c7; /* Lighter blue for the second line */
 	margin-top: 5px;
   }
   
   #hero p:last-of-type {
 	font-size: 1.3rem;
-	color: #8892b0;
+	color: #9aa8c7;
 	margin-top: 20px;
 	max-width: 700px; /* Keep the paragraph from getting too wide */
 	line-height: 1.5;
@@ -3598,7 +3598,7 @@ input, select, textarea {
 	/* SECONDARY (See My Work) */
 	.hero-button.secondary {
 		background-color: transparent;
-		color: #8892b0 !important;
+		color: #9aa8c7 !important;
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08); /* faint outer edge */
 		transition: all 0.3s ease;
