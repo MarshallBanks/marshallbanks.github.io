@@ -3280,8 +3280,20 @@ input, select, textarea {
 	justify-content: space-between;
 }
 
+#professional-highlights .project-top {
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.5rem;
+	min-height: 120px;
+	margin-bottom: 40px;
+}
+
 .project-footer {
     margin-top: auto;
+}
+
+#professional-highlights .projects-grid > li {
+    padding: 30px;
 }
 
 .projects-grid li {
@@ -3306,6 +3318,10 @@ input, select, textarea {
     height: 100%;
 }
 
+#professional-highlights .project-title {
+    margin: 0;
+}
+
 .project-title a {
     text-decoration: none;
     color: #ccd6f6;
@@ -3313,8 +3329,20 @@ input, select, textarea {
     margin-top: 10px;
 }
 
+#professional-highlights .project-description {
+    margin: 0;
+}
+
 .project-description {
     margin: 15px 0;
+}
+
+#professional-highlights .project-tech-list {
+    gap: 16px;
+}
+
+#professional-highlights .project-tech-list li {
+    padding: 4px 16px;
 }
 
 .project-tech-list {
@@ -3349,6 +3377,13 @@ input, select, textarea {
 	stroke-linecap: round; 
 	stroke-linejoin: round;
 }
+
+#professional-highlights .folder svg {
+    width: 52px;
+    height: 52px;
+	color: #64ffda;
+	stroke-width: 1.5;
+ }
 
 .folder svg {
     width: 50px;
